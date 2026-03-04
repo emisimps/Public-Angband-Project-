@@ -1,0 +1,39 @@
+=====================================
+Monster File Editor (MFE) User Manual
+=====================================
+Created by Software Engineering Team 8!
+--------------------------------------
+
+This MFE program is meant for use along side the pc game Angband! Please go to https://rephial.org/ for more information regarding downloading and installing Angband. Trying to use this program with other games or text files will not work or lead to unexpected results.
+
+1. Starting up the Program.
+    In order to run MFE, the user must open the terminal on their personal machine. On Windows, click the windows button and search 'terminal' and run it. On MacOS, press command and space bar to open spotlight and search 'terminal' and run it. For Linux, please refer to your Linux distributor for the command.
+    One terminal is open, enter the directory that this program is found in using the 'cd {directory}' command, and then type 'python MFE.py {monster.txt file path}'. You must enter the Angband directory beforehand and copy the file path of the monster.txt file in order for this program to work. This file is found in libs>gamedata within the Angband directory.
+
+2. The Main Menu/Searching the Program.
+    Once MFE is started within the terminal it should say that the text file has been parsed and all monsters have been loaded. If the program gives you an error at this point, you have either typed an invalid file path, or have given the program a file it cannot use.
+    You will then be given two options regarding searching for monsters to edit. You may press '1' to see a list of every monster sorted by what depth they are found in the dungeon, or you may press '2' to search for a specific monster by name or keyword. When searching by name or keyword, you will be given a list of monsters that have that name or keyword.
+
+3. Editing Monsters.
+    Once you have chosen a monster you want to edit after searching for it with either of the above mentioned ways, you will be given a prompt to enter the name of the monster you would like to edit. You must type the name of the monster exactly as it is shown in the list in order for the editor to recognize it. If you have type the name in correctly, the editor should repeat which monster you have chosen.
+    Next the program will ask you what attributes you would like to change on the selected monster. The editable attributes are:
+        1. name
+        2. speed
+        3. hit-points
+        4. experience
+        5. blows
+        6. flags
+        7. flags-off
+        8. description
+        9. depth
+        10. armorclass
+    If you wish to understand how each of these attributes affect the monster and gameplay within Angband, please refer to Angbands's documentation found on https://rephial.org/ to understand what each attribute is.
+    Once an attribute has been chosen, the program will repeat it back to you and display the current value of that attribute. before asking if you would like to continue. You will press 'y' to continue and 'n' to end the program. If 'y' is pressed, the program will give you a prompt to input the updated value, from which the program will give you a heads up about modifying the text file before asking if you would like to write the file. It should be noted that this program will modify and overwrite the current text file given, so the user should make a back-up of the original before proceeding.
+    Once the user is satisfied with their change, they will be prompted to write the change on file with 'y' representing yes and 'n' representing no. If 'n' is chosen, The change will not be written but still saved within the program, and the program will ask you if you like to make more updates. typing 'y' will put the user back at the start where they must retype the name of the monster they would like to edit, while 'n' will end the program with the message 'Finished editing.'
+    If the user chooses to write to the file, the monster.txt file will be updated to reflect these changes, and the user will then be prompted if they would like to continue making updates. The user may update as many monsters and attributes as they wish before writing to the file, and all these changes will be reflected on the text file.
+
+4. Ending the Program.
+    While the program has termination built in after the user tells the program it is done editing or does not wish to make changes, the user may press 'ctrl + c' on Windows to prematuraly end the program whenever they wish. This may be done if the user makes a mistake while searching a monster by name/keyboard, or you realized you did not want to edit a specific variable of a monster.
+
+5. Changes to Angband.
+    Once the user is finished making all their changes and writing to the text file, if the user copied the file path straight out of the Angband directory, all they will need to is Angband to see their changes reflected in game. If the user made a back-up text file, they will need to move that text file and replace it with the standard text file currently in the Angband directory. Once they do that, they should see their changes reflected in game.
