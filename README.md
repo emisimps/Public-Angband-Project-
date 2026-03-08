@@ -1,4 +1,18 @@
     sp26_se1_team08
+
+    IMPORTANT:
+
+    this is a group project: 
+    While i (emily Simpson) have reviewed all this code i had a particalur hand in:
+    Edit();
+    Parse_Monsters();
+    Test_results Document
+    Process Document
+    The A04 Pt1 time assisment and role distrubution file
+
+    !!!it should be noted that we simplely added and edited to the orginal angaband code that can be found here:
+    https://github.com/angband/angband, our edited copy is under angband-master
+    
     
     To run this program:
         1. Download MFE.py
