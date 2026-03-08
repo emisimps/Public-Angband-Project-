@@ -10,7 +10,7 @@
     Process Document
     The A04 Pt1 time assisment and role distrubution file
 
-    !!!it should be noted that we simplely added and edited to the orginal angaband code that can be found here:
+    !!!it should be noted that we simplely added to and edited the orginal angaband code that can be found here:
     https://github.com/angband/angband, our edited copy is under angband-master
     
     
